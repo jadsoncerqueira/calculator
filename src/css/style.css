@@ -1,0 +1,100 @@
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 700;
+}
+
+p {
+    margin: 0;
+    font-size: 90%;
+    font-weight: 500;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+#calculator {
+    width: 400px;
+    background-color: rgb(2, 7, 39);
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn {
+    font-size: 20px;
+    height: 3em;
+    border: none;
+}
+
+
+.soma {
+    width: 100%;
+    grid-column: span 2;
+}
+
+#area-botoes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 3px;
+}
+
+#area-resultado {
+    height: 100px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+}
+
+.b-fraco {
+    background-color: rgba(255, 255, 255, 0.075);
+    color: rgb(0, 102, 255);
+}
+
+.b-fraco:hover {
+    background-color: rgba(255, 255, 255, 0.103);
+    border:1px solid rgba(255, 255, 255, 0.082);
+}
+
+.b-fraco-medio {
+    background-color: rgba(255, 255, 255, 0.329);
+    color: rgb(182, 182, 182);
+}
+
+.b-fraco-medio:hover {
+    background-color: rgba(255, 255, 255, 0.356);
+    border:1px solid rgba(255, 255, 255, 0.11);
+}
+
+.b-forte {
+    background-color: rgb(0, 47, 255);
+    color: rgb(119, 146, 221);
+}
+
+.b-medio {
+    background-color: rgb(0, 47, 255);
+    color: rgb(119, 146, 221);
+}
+
+.b-medio:hover,
+.b-forte:hover {
+    background-color: rgb(19, 62, 253);
+    border:1px solid rgba(19, 62, 253, 0.082);
+}
+
+#resultado {
+    color: white;
+    font-size: 50px;
+}
+
+@media only screen and (max-width: 500px) {
+    #calculator {
+        width: 80%;
+    }
+}
